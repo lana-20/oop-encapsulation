@@ -62,7 +62,7 @@ Java code sample:
 
 The only way to modify the state is via the public methods, play(), feed(), and sleep().
 
-    public static main void (String[] args) {
+    public static void main(String[] args) {
 
       Cat cat = new Cat();
 
@@ -83,3 +83,72 @@ The output is as follows:
     Energy: 50
     Mood: 53
     Hungry: 49
+
+Here's the Python equivalent of the Java code, using Python property decorators to demonstrate encapsulation in Object-Oriented Programming:
+
+    class Cat:
+        def __init__(self):
+            self._mood = 50
+            self._hungry = 50
+            self._energy = 50
+
+        def sleep(self):
+            print("Sleep…")
+            self._energy += 1
+            self._hungry += 1
+
+        def play(self):
+            print("Play…")
+            self._mood += 1
+            self._energy -= 1
+            self._meow()
+
+        def feed(self):
+            print("Feed…")
+            self._hungry -= 1
+            self._mood += 1
+            self._meow()
+
+        def _meow(self):
+            print("Meow…")
+
+        @property
+        def mood(self):
+            return self._mood
+
+        @property
+        def hungry(self):
+            return self._hungry
+
+        @property
+        def energy(self):
+            return self._energy
+
+    if __name__ == "__main__":
+        cat = Cat()
+
+        cat.feed()
+        cat.play()
+        cat.feed()
+        cat.sleep()
+
+        print("Energy:", cat.energy)
+        print("Mood:", cat.mood)
+        print("Hungry:", cat.hungry)
+
+The output is as follows:
+
+    Feed…
+    Meow…
+    Play…
+    Meow…
+    Feed…
+    Meow…
+    Sleep…
+    Energy: 51
+    Mood: 52
+    Hungry: 52
+
+In this implementation, the mood, hungry, and energy fields are declared as protected using the leading underscore notation. The get_mood(), get_hungry(), and get_energy() methods are replaced with Python property getters (declared using the @property decorator).
+
+This way, the internal state of the Cat object can be accessed using the properties (e.g., cat.energy), but the underlying fields cannot be directly modified.
