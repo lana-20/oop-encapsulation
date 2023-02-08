@@ -8,11 +8,13 @@ The code that takes advantage of encapsulation is:
 - [x] secure (the client is not aware of how data is manipulated inside the class)
 - [x] easy to test (it’s easier to test methods than fields)
 
-<img src="https://user-images.githubusercontent.com/70295997/216810749-64a94f9b-00ad-4d5b-b112-2baa6157bb52.png" width=40> In Java, encapsulation can be achieved via the _access modifiers_, <code>public</code>, <code>private</code>, and <code>protected</code>.
+<img src="https://user-images.githubusercontent.com/70295997/216810749-64a94f9b-00ad-4d5b-b112-2baa6157bb52.png" width=40> In Java, encapsulation can be achieved via the _access modifiers/specifiers_, <code>public</code>, <code>private</code>, and <code>protected</code>.
 
-<img src="https://user-images.githubusercontent.com/70295997/216810799-021871c1-780a-484d-8634-690968fe9c05.png" width=40> In Python, the naming convention is _access/vector specifiers_. Everything is <code>public</code> by default. 
-* To make fields/variables and methods <code>protected</code>, I prefix them with a single underscore '_'. Eg., <code>_field</code> or <code>def _method()</code>. 
-* To make fields/variables and methods <code>private</code>, I prefix them with a dunder '__'. Eg., <code>__field</code> or <code>def __method()</code>.
+Everything is <code>public</code> by default. 
+
+<img src="https://user-images.githubusercontent.com/70295997/216810799-021871c1-780a-484d-8634-690968fe9c05.png" width=40> In Python:
+* To make fields/variables and methods <code>protected</code>, prefix them with a single underscore '_'. Eg., <code>_field</code> or <code>def _method()</code>. 
+* To make fields/variables and methods <code>private</code>, prefix them with a dunder '__'. Eg., <code>__field</code> or <code>def __method()</code>.
 
 Commonly, when on object manages its own state, its state is declared via <code>private</code> variables and is accessed and/or modified via <code>public</code> methods. For example, a <code>Cat</code> class can have its own state represented by fields, such as <code>mood</code>, <code>hungry</code>, and <code>energy</code>. While the code external to the <code>Cat</code> class cannot modify any of these fields directly, it can call <code>public</code> methods, such as <code>play()</code>, <code>feed()</code> and <code>sleep()</code> that modify the <code>Cat</code> state internally. The <code>Cat</code> class may also have <code>private</code> methods that are not accessible outside the class, such as <code>meow()</code>. 
 
