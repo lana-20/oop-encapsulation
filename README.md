@@ -16,7 +16,7 @@ Commonly, when on object manages its own state, its state is declared via privat
 
 <img src="https://user-images.githubusercontent.com/70295997/217401305-9cb67ac3-355c-443c-9318-0e5b9d3d64b1.png" width=40> This is encapsulation.
 
-<img src="https://user-images.githubusercontent.com/70295997/216810749-64a94f9b-00ad-4d5b-b112-2baa6157bb52.png" width=40> Java code sample:
+<img src="https://user-images.githubusercontent.com/70295997/216810749-64a94f9b-00ad-4d5b-b112-2baa6157bb52.png" width=40> [Java code sample](https://github.com/lana-20/oop-encapsulation/blob/main/java-class-cat):
 
     public class Cat {
 
