@@ -1,18 +1,18 @@
 # <img src="https://user-images.githubusercontent.com/70295997/217401037-a4b98acb-c52c-49b4-90ed-a44b27407ea2.png" width=40> Encapsulation
 
-Encapsulation is one of the core concepts of Object Oriented Programming (OOP). Mainly, encapsulation binds together the code and data in a single unit of work (a class) and acts as a defensive shield that doesn’t allow the external code to access this data directly. It is the technique of hiding the object state from the outer world and exposing a set of public methods for accessing this state. 
+_Encapsulation is one of the core concepts of Object Oriented Programming (OOP)._ Mainly, encapsulation binds together the code and data in a single unit of work (a class) and acts as a defensive shield that doesn’t allow the external code to access this data directly. _It is the technique of hiding the object state from the outer world and exposing a set of <code>public</code> methods for accessing this state. When each object keeps its state <code>private</code> inside a class, encapsulation is achieved. This is why encapsulation is also known as the **data-hiding** mechanism._
 
-When each object keeps its state private inside a class, encapsulation is achieved. This is why encapsulation is also known as the data-hiding mechanism. The code that takes advantage of encapsulation is:
+The code that takes advantage of encapsulation is:
 - [x] loosely coupled (eg., I can change the names of the class variables without breaking the client code)
 - [x] reusable
 - [x] secure (the client is not aware of how data is manipulated inside the class)
 - [x] easy to test (it’s easier to test methods than fields)
 
-<img src="https://user-images.githubusercontent.com/70295997/216810749-64a94f9b-00ad-4d5b-b112-2baa6157bb52.png" width=40> In Java, encapsulation can be achieved via the access modifiers, public, private, and protected.
+<img src="https://user-images.githubusercontent.com/70295997/216810749-64a94f9b-00ad-4d5b-b112-2baa6157bb52.png" width=40> In Java, encapsulation can be achieved via the access modifiers, <code>public</code>, <code>private</code>, and <code>protected</code>.
 
 <img src="https://user-images.githubusercontent.com/70295997/216810799-021871c1-780a-484d-8634-690968fe9c05.png" width=40> In Python, these modifiers are called vector specifiers.
 
-Commonly, when on object manages its own state, its state is declared via private variables and is accesses and/or modified via public methods. For example, a Cat class can have its own state represented by fields, such as mood, hungry, and energy. While the code external to the Cat class cannot modify any of these fields directly, it can call public methods, such as play(), feed() and sleep() that modify the Cat state internally. The Cat class may also have private methods that are not accessible outside the class, such as meow(). 
+Commonly, when on object manages its own state, its state is declared via <code>private</code> variables and is accesses and/or modified via <code>public</code> methods. For example, a <code>Cat</code> class can have its own state represented by fields, such as <code>mood</code>, <code>hungry</code>, and <code>energy</code>. While the code external to the <code>Cat</code> class cannot modify any of these fields directly, it can call <code>public</code> methods, such as <code>play()</code>, <code>feed()</code> and <code>sleep()</code> that modify the <code>Cat</code> state internally. The <code>Cat</code> class may also have <code>private</code> methods that are not accessible outside the class, such as <code>meow()</code>. 
 
 <img src="https://user-images.githubusercontent.com/70295997/217401305-9cb67ac3-355c-443c-9318-0e5b9d3d64b1.png" width=40> This is encapsulation.
 
@@ -150,6 +150,6 @@ The output is as follows:
     Mood: 52
     Hungry: 52
 
-In this implementation, the mood, hungry, and energy fields are declared as protected using the leading underscore notation. The get_mood(), get_hungry(), and get_energy() methods are replaced with Python property getters (declared using the @property decorator).
+In this implementation, the <code>mood</code>, <code>hungry</code>, and <code>energy</code> fields are declared as protected using the leading underscore notation. The <code>get_mood()</code>, <code>get_hungry()</code>, and <code>get_energy()</code> methods are replaced with Python property getters (declared using the @property decorator).
 
-This way, the internal state of the Cat object can be accessed using the properties (e.g., cat.energy), but the underlying fields cannot be directly modified.
+This way, the internal state of the <code>Cat</code> object can be accessed using the properties (eg., <code>cat.energy</code>), but the underlying fields cannot be directly modified.
