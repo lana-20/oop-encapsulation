@@ -1,0 +1,11 @@
+This is a Java class "Cat" that represents a simple simulation of a cat's behavior. The cat has three private fields: mood, hungry, and energy, which represent the cat's current mood, hunger, and energy levels.
+
+The class has four public methods: sleep(), play(), feed(), and meow(). The sleep() method increases the cat's energy and hunger levels, the play() method increases the cat's mood and decreases its energy level and meow() is called after play() and feed(). The feed() method decreases the cat's hunger level and increases its mood level, and meow() is called after feed().
+
+There are three get methods, getMood(), getHungry(), and getEnergy(), which return the current values of mood, hungry, and energy, respectively.
+
+The main method of the program creates an instance of the Cat class and performs some actions on it.
+
+A Cat object is created and assigned to the "cat" variable. Then, the feed() method is called on the cat object, followed by the play() method, another call to the feed() method, and finally the sleep() method.
+
+Finally, the current energy, mood, and hunger levels of the cat are printed to the console using the getEnergy(), getMood(), and getHungry() methods, respectively.
