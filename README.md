@@ -12,7 +12,7 @@ The code that takes advantage of encapsulation is:
 
 Everything is <code>public</code> by default. 
 
-<img src="https://user-images.githubusercontent.com/70295997/216810799-021871c1-780a-484d-8634-690968fe9c05.png" width=40> In Python:
+<img src="https://user-images.githubusercontent.com/70295997/216810799-021871c1-780a-484d-8634-690968fe9c05.png" width=40> [In Python](https://github.com/lana-20/encapsulation-python):
 * To make fields/variables and methods <code>protected</code>, prefix them with a single underscore '_'. Eg., <code>_field</code> or <code>def _method()</code>. 
 * To make fields/variables and methods <code>private</code>, prefix them with a dunder '__'. Eg., <code>__field</code> or <code>def __method()</code>.
 
