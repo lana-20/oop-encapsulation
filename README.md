@@ -1,4 +1,4 @@
-# Encapsulation
+# <img src="https://user-images.githubusercontent.com/70295997/217401037-a4b98acb-c52c-49b4-90ed-a44b27407ea2.png" width=40> Encapsulation
 
 Encapsulation is one of the core concepts of Object Oriented Programming (OOP). Mainly, encapsulation binds together the code and data in a single unit of work (a class) and acts as a defensive shield that doesn’t allow the external code to access this data directly. It is the technique of hiding the object state from the outer world and exposing a set of public methods for accessing this state. 
 
@@ -8,14 +8,15 @@ When each object keeps its state private inside a class, encapsulation is achiev
 - [x] secure (the client is not aware of how data is manipulated inside the class)
 - [x] easy to test (it’s easier to test methods than fields)
 
-In Java, encapsulation can be achieved via the access modifiers, public, private, and protected. 
-In Python, these are called vector specifiers.
+<img src="https://user-images.githubusercontent.com/70295997/216810749-64a94f9b-00ad-4d5b-b112-2baa6157bb52.png" width=40> In Java, encapsulation can be achieved via the access modifiers, public, private, and protected.
+
+<img src="https://user-images.githubusercontent.com/70295997/216810799-021871c1-780a-484d-8634-690968fe9c05.png" width=40> In Python, these modifiers are called vector specifiers.
 
 Commonly, when on object manages its own state, its state is declared via private variables and is accesses and/or modified via public methods. For example, a Cat class can have its own state represented by fields, such as mood, hungry, and energy. While the code external to the Cat class cannot modify any of these fields directly, it can call public methods, such as play(), feed() and sleep() that modify the Cat state internally. The Cat class may also have private methods that are not accessible outside the class, such as meow(). 
 
-This is encapsulation.
+<img src="https://user-images.githubusercontent.com/70295997/217401305-9cb67ac3-355c-443c-9318-0e5b9d3d64b1.png" width=40> This is encapsulation.
 
-Java code sample:
+<img src="https://user-images.githubusercontent.com/70295997/216810749-64a94f9b-00ad-4d5b-b112-2baa6157bb52.png" width=40> Java code sample:
 
     public class Cat {
 
@@ -84,7 +85,7 @@ The output is as follows:
     Mood: 53
     Hungry: 49
 
-Here's the Python equivalent of the Java code, using Python property decorators to demonstrate encapsulation in Object-Oriented Programming:
+<img src="https://user-images.githubusercontent.com/70295997/216810799-021871c1-780a-484d-8634-690968fe9c05.png" width=40> Here's the Python equivalent of the Java code, using Python property decorators to demonstrate encapsulation in Object Oriented Programming:
 
     class Cat:
         def __init__(self):
